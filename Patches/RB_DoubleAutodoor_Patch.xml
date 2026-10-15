@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="RB_DoubleAutodoor"]/comps</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="RB_DoubleAutodoor"]/comps</xpath>
+      <value>
+        <li Class="TSA.RemoteAutodoor.CompProperties_RemoteAutodoor">
+          <onlyWhenPowered>true</onlyWhenPowered>
+        </li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>
